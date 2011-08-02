@@ -1,0 +1,12 @@
+git clone https://github.com/3wh/learning-git-interactively-playground.git
+cd learning-git-interactively-playground
+
+git config --local user.name "User2"
+git config --local user.email user2@3wh.be
+
+
+
+mvn archetype:generate -DarchetypeCatalog=remote -DarchetypeArtifactId=springmvc-archetype -DarchetypeGroupId=com.force.sdk -DgroupId=be.intecbrussel.test -DartifactId=GitIt -Dversion=1.0-SNAPSHOT -DinteractiveMode=false
+
+
+
