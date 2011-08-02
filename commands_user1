@@ -51,6 +51,8 @@ git push -u origin master #Let's do it again
 
 #####################################################
 
+git pull
+
 mvn clean install
 
 git tag -a v1
