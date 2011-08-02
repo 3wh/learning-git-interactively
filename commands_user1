@@ -1,0 +1,50 @@
+#git config --file github.config user.name "User1"
+#git config --file github.config user.email user1@3wh.be
+
+git config --local user.name "User1"
+git config --local user.email user1@3wh.be
+
+#git config --global user.name "User1"
+#git config --global user.email user1@3wh.be
+
+#git config --system user.name "User1"
+#git config --system user.email user1@3wh.be
+
+
+
+mkdir learning-git-interactively
+cd learning-git-interactively
+
+
+git init #running git init multiple times will reinitialize the existing git repository
+cat .git/config
+
+
+git config --local user.name "User1"
+git config --local user.email user1@3wh.be
+
+
+echo "What happens if you dont specify user.email?"
+
+cat .git/config
+
+
+touch README
+echo 'Does anyone ever read READMEs?' > README
+
+
+git add README
+git commit -m 'first commit'
+
+
+#git remote add origin git@github.com:3wh/learning-git-interactively-playground.git
+git remote add origin https://3wh@github.com/3wh/learning-git-interactively-playground.git
+
+
+echo "Try with wrong pw first"
+
+
+git push -u origin master
+
+git push -u origin master #Let's do it again
+
