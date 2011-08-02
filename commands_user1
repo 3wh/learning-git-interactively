@@ -48,3 +48,13 @@ git push -u origin master
 
 git push -u origin master #Let's do it again
 
+
+#####################################################
+
+mvn clean install
+
+git tag -a v1
+
+git push #nothing?
+git push origin v1
+
